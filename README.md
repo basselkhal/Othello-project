@@ -11,6 +11,13 @@ In this project, we will explore the game-playing of Othello using search algori
  number of nodes that need to be searched.
  3. Alpha-beta pruning with iterative deepening (depth is increased iteratively in the search
  tree until the timing constraints are violated)
+# Heuristics
+ Use at least one of the below or a combination of all of them. Refer to the paper here to learn
+ how those heuristics are calculated.
+ 1. Mobility
+ 2. Coin Parity
+ 3. Corners Captured
+ 4. Stability
 # The GUI
  You will need to create a GUI that allows for human vs. human, human vs. computer,
  and computer vs. computer gameplay.
