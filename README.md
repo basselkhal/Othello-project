@@ -22,3 +22,4 @@ In this project, we will explore the game-playing of Othello using search algori
  You will need to create a GUI that allows for human vs. human, human vs. computer,
  and computer vs. computer gameplay.
  # Simulation
+ download zip file and run main exe file
