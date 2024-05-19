@@ -246,6 +246,8 @@ class TextBox():
     def blit(self, screen):
         screen.blit(self.surf, self.rect)
 
+        
+
 # Change the animation speed to a given value
 def changeSpeed(newSpeed):
     # Update the global variables for flipping and placing time limits
