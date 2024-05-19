@@ -1,6 +1,6 @@
 from Board import set_up_board
-from AI import Bot
-from GUI import PlayGround, Button, TextBox, changeSpeed, WINDOW_SIZE, BOARD_WIDTH, TILE_SPACING
+from heuristic.AI import Bot
+from Gui.GUI import PlayGround, Button, TextBox, changeSpeed, WINDOW_SIZE, BOARD_WIDTH, TILE_SPACING
 from Tuples import V
 import math
 import pygame as pg
@@ -615,7 +615,8 @@ while True:
     ###########################################################################################################
     # No matter what, we always have the background and OTHELLO
     screen.blit(background, (0, 0))
-    background_image = pg.image.load("./Photos/modeswindow1.jpg").convert()
+    ####
+    background_image = pg.image.load("./second.jpg").convert()
     background_image = pg.transform.scale(background_image, (800, 700))
     screen.blit(background_image, (0, 0))
     
@@ -686,7 +687,7 @@ while True:
             double_bot_button.blit(screen,left_clicking=="double bot")
             no_bot_button.blit(screen, left_clicking=="no bot")
             single_bot_button.blit(screen,left_clicking=="single bot")
-            image = pg.image.load('Photos\Capture..jpg')
+            image = pg.image.load('first.jpg')
             new_image_width = 380  # Set the desired width of the image
             new_image_height = 140  # Set the desired height of the image
             image = pg.transform.scale(image, (new_image_width, new_image_height))
@@ -743,7 +744,7 @@ while True:
     window_title = "Othello Game"  # Set the desired name for the window
     
     pg.display.set_caption(window_title)
-    icon = pg.image.load("./Photos/Capture..jpg")
+    icon = pg.image.load("./first.jpg")
     pg.display.set_icon(icon)
     pg.display.update()
     clock.tick(60) # Limits to 60 fps
